@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+
+.cursor{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #c6c6c6;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+}
+
+
+.page1{
+    /* border: 2px solid red; */
+    height: 100vh;
+    background: url(assests/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.name{
+    
+    /* border: 2px solid red; */
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    color: white;
+    flex-direction: column;
+    transform: translateY('0');
+    
+
+    
+    
+    
+}
+
+.name span{
+    margin-right: 50px;
+    font-size: 7.5vw;
+    align-self: flex-end;
+    font-family: 'Audiowide', sans-serif;
+    pointer-events: none;
+    user-select: none;
+}
+.name .lrow{
+    font-size: 2.5vw;
+    color: aqua;
+}
+
+
+
+.navbar {
+    width: 100vw;
+    height: 100px;
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: c;
+    justify-content: flex-end;
+    align-items: center;
+    user-select: none;
+    z-index: 2;
+    /* border: 2px solid white; */
+
+}
+
+
+
+.navbar .tabbar {
+    /* border: 2px solid white; */
+    margin-right: 60px;
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-family: 'Gabarito', sans-serif;
+    cursor: pointer;
+}
+
+.tabbar a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+.tabbar a:hover {
+    color: #00ffff;
+}
+
+.navbar .logo {
+    /* border: 2px solid white; */
+    width: 100px;
+    height: 100px;
+    background-image: url(assests/logo.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 150px;
+    cursor: pointer;
+
+}
+
+
+.page2{
+    height: 100vh;
+        background: rgb(0, 0, 0);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 3;
+        opacity: 1;
+        
+}
+
+
+.page2 .about{
+    /* border: 2px white solid; */
+    width: 80vw;
+    height: 80vh;
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'cairo';
+
+}
+
+.about .head{
+    /* border: 2px white solid; */
+    position: relative;
+    display: inline-block;
+    color: aqua;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 3.2rem;
+    width: 100%;
+    height: 12vh;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    text-shadow: #00ffff55 0 -6px;
+    transition: 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+    opacity: 0;
+   
+}
+
+.about .head[data-scroll="in"]{
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.about .head::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: aqua;
+    transform-origin: right;
+    transition: 0.5s;
+    
+}
+
+.about .head[data-scroll="in"]:before{
+    transform: scaleX(0);
+    transition-delay: 0.5s;
+}
+
+
+.about .content{
+    width: 100%;
+    height: 40vh;
+    color: rgb(142, 142, 142);
+    font-size: 1.4em;
+    
+}
+
+.about .content p{
+    opacity: 0;
+    transform: translateY(50%);
+}
+
+
+.about .content p[data-scroll="in"]{
+    transform: translateY(0%);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+
+.page3 {
+    height: 100vh;
+    background: rgb(2, 2, 2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.workbox{
+    margin-top: 40px;
+    border: 2px solid white;
+    width: 80%;
+    height: 80%;
+}
+

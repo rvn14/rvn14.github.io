@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Audiowide&family=Cairo:wght@600&family=Changa:wght@300&family=Cinzel&family=Gabarito:wght@500&family=Josefin+Sans:ital,wght@0,400;0,500;1,700&family=Montserrat:ital,wght@0,700;1,700&family=Orbitron:wght@500&family=Poppins:ital,wght@0,700;0,800;1,400;1,600;1,700;1,800&family=Russo+One&family=Source+Code+Pro:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="page1" id="background">
+        <div class="cursor"></div>
+        <div class="navbar">
+            <div class="logo">
+        
+            </div>
+            <div class="tabbar">
+                <a href="#">ABOUT ME</a>
+                <a href="#">ARCHIVEMENTS</a>
+                <a href="#">CONTACT</a>
+        
+            </div>
+        
+        </div>
+        <div class="name" id="name">
+            <span class="fline">I AM</span>
+            <span class="sline">DASUN</span>
+            <span class="tline">ADITHYA</span>
+            <span class="lrow">-UX/UI/GRAPHIC DESIGNER-</span>
+        </div>
+    </div>
+
+    <div class="page2">
+        <div class="about">
+            <div class="head">ABOUT ME</div>
+            <div class="content"><p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the websites more & more interactive with web animations. A responsive design makes your website accesible to all users reguardless of their devices.As a passionate and innovative UX/UI/Graphic designer, I specialize in creating immersive and visually appealing digital
+            experiences. With a keen eye for detail and a deep understanding of user psychology, I strive to craft designs that
+            seamlessly blend aesthetics with functionality. My creative journey involves translating complex concepts into intuitive
+            and user-friendly interfaces, always pushing the boundaries of design to deliver memorable and impactful solutions.
+            Leveraging my skills in user research, wireframing, prototyping, and graphic design, I am dedicated to enhancing user
+            satisfaction by creating designs that not only meet but exceed expectations. With a commitment to staying on the cutting
+            edge of design trends and technologies, I am excited to contribute my expertise to projects that demand a thoughtful and
+            user-centric approach.</p></div>
+        </div>
+    </div>
+    <div class="page3">
+        <section class="workbox">
+            <div class="about">
+                <div class="head">MY WORK</div>
+            </div>
+        </section>
+    </div>
+        <script src="scroll-out.js"></script>
+        <script type="text/javascript">
+            ScrollOut({
+                targets: '.about .head, .about .content p'
+            });
+        </script>
+</body>
+</html>
