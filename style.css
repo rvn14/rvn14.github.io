@@ -6,6 +6,7 @@
 
 body{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 
@@ -131,7 +132,6 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 3;
         opacity: 1;
         
 }
@@ -214,12 +214,13 @@ body{
 
 
 .page3 {
-    height: 150vh;
+    height: 400vh;
     background: rgb(2, 2, 2);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -233,17 +234,30 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+}
+
+.workbox .topic{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    color: white;
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .workbox .about{
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: white;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 1.3em;
 }
 
 .workbox .about .head{
-    text-align:center ;
+    text-align: center;
 }
 
 .workbox .photobox{
@@ -252,6 +266,7 @@ body{
     height: 820px;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .workbox .photobox .wimg{
@@ -262,6 +277,68 @@ body{
     
 }
 
-.workbox .photobox .wimg:hover{
-    
+#img1{
+    transform: translateX(-50%);
+    opacity: 0;
+
 }
+
+#img1[data-scroll="in"]{
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#img2 {
+    transform: translateX(50%);
+    opacity: 0;
+
+}
+
+#img2[data-scroll="in"] {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#img3{
+    transform: translateX(50%);
+    opacity: 0;
+
+}
+
+#img3[data-scroll="in"] {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#img4{
+    transform: translateX(-50%);
+    opacity: 0;
+
+}
+
+#img4[data-scroll="in"] {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#webp{
+    width: 90%;
+}
+#webs{
+    padding: 0px 30px;
+}
+.page4{
+    height: 100vh;
+    background: rgb(2, 2, 2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
