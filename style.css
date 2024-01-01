@@ -240,7 +240,7 @@ nav{
 }
 
 .about-containers{
-    width: 60vw;
+    width: 65vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -323,13 +323,18 @@ nav{
 
 #det-abt{
     margin-top: 80px;
+    
+
 }
 
 .cont1{
     transform: translateX(30%);
+    margin-bottom: 30px;
+    
 }
 .cont2{
     transform: translateX(-30%);
+    margin-bottom: 30px;
 }
 
 .details-container[data-scroll="in"]{
