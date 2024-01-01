@@ -127,7 +127,7 @@ nav{
 .name span{
     transition: 0.5s;
 }
-.name span:hover{
+.name span span:hover{
     color: #03ffcc;
 }
 
@@ -544,8 +544,9 @@ article .icon {
     }
 
     .name{
-        font-size: 30vw;
+        font-size: 5.5rem;
+        flex-direction: column;  
         
     }
-    
+
 }
