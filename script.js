@@ -9,6 +9,10 @@ window.addEventListener("scroll",()=>{
     document.getElementById("name").style.transform = `translateY(${window.scrollY * 0.6}px)`;
     console.log(`${window.scrollY * 1 + window.innerWidth}px`);
     document.getElementById("name").style.opacity = `${1-(window.scrollY * 0.0014)}`;
+
+    document.getElementById("name2").style.transform = `translateY(${window.scrollY * 0.6}px)`;
+    console.log(`${window.scrollY * 1 + window.innerWidth}px`);
+    document.getElementById("name2").style.opacity = `${1-(window.scrollY * 0.0014)}`;
     
     // document.getElementById("container").style.transform = `translateY(-${window.scrollY*1.2}px)`;
 })
