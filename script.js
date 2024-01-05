@@ -17,3 +17,19 @@ window.addEventListener("scroll",()=>{
     // document.getElementById("container").style.transform = `translateY(-${window.scrollY*1.2}px)`;
 })
 
+
+document.getElementById("arrdwn").addEventListener('click',()=>{
+    if (document.getElementById("navmenu").style.top == `-100px`) {
+        document.getElementById("navmenu").style.top = `0px`;
+        document.getElementById("navbox").style.opacity = `1`;
+        // document.getElementById("arrdwn").style.transform = `rotateX(-180deg)`;
+    }
+    else {
+        document.getElementById("navmenu").style.top = `-100px`;
+        document.getElementById("navbox").style.transitionDelay = `0s`;
+        document.getElementById("navbox").style.opacity = `0`;
+        // document.getElementById("arrdwn").style.transform = `rotateX(180deg)`;
+        
+    }
+})
+
