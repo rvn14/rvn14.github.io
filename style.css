@@ -45,9 +45,11 @@ nav{
 
 .navmenu{
     opacity: 0;
+    display: none;
 }
 .logobar{
     opacity: 0;
+    display: none;
 }
 
 .tabs{
@@ -604,6 +606,7 @@ article .icon {
         backdrop-filter: blur(3px);
         top: -100px;
         display: flex;
+        display: inline-flex;
         opacity: 1;
         justify-content: center;
         flex-direction: row;
@@ -637,6 +640,7 @@ article .icon {
         width: 90%;
         height: 60px;
         opacity: 1;
+        display: block;
         position: fixed;
         top: 15px;
         color: white;
