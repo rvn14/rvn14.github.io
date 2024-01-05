@@ -43,6 +43,13 @@ nav{
     z-index: 2;
 }
 
+.navmenu{
+    opacity: 0;
+}
+.logobar{
+    opacity: 0;
+}
+
 .tabs{
     display: flex;
     align-items: center;
@@ -597,7 +604,7 @@ article .icon {
         backdrop-filter: blur(3px);
         top: -100px;
         display: flex;
-        
+        opacity: 1;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
@@ -629,7 +636,7 @@ article .icon {
     .logobar{
         width: 90%;
         height: 60px;
-        
+        opacity: 1;
         position: fixed;
         top: 15px;
         color: white;
