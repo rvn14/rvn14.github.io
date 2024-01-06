@@ -63,6 +63,10 @@ nav{
     
 
 }
+.tabs a{
+    text-decoration: none;
+    color: white;
+}
 
 .tabs li{
     transition: 0.5s;
@@ -626,14 +630,23 @@ article .icon {
         transition: 0.2s;
         transition-delay: 0.3s;
         opacity: 0;
+        text-decoration: none;
+        color: white;
     }
     .navlinks{
         width: 35vw;
         height: 50px;
         text-align: center;
+        text-decoration: none;
+        color: white;
         
         
         
+    }
+
+    .navbox a{
+        text-decoration: none;
+        color: white;
     }
 
     .logobar{
