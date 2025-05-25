@@ -64,8 +64,7 @@ export const BentoCard = ({ src, title, description, isComingSoon, repoLink, sit
     });
   };
 
-  const handleMouseEnter = () => setHoverOpacity(1);
-  const handleMouseLeave = () => setHoverOpacity(0);
+
 
   return (
     <div 
@@ -78,14 +77,14 @@ export const BentoCard = ({ src, title, description, isComingSoon, repoLink, sit
         src={src}
         alt={typeof title === 'string' ? title : 'Project thumbnail'}
       />
-      <div className="absolute top-0 z-10 flex size-full flex-col justify-between p-5 bg-gradient-to-b from-black/20 to-black/30 text-gray-50 transition-opacity duration-300">
-        <div className="flex flex-col p-3 bg-black/0 backdrop-blur-xs rounded-lg border-hsla shadow-lg">
-          <div className="flex items-center justify-between">
-            <h1 className="bento-title special-font shadow-md select-none">{title}</h1>
+      <div className="absolute top-0 z-10 flex size-full flex-col justify-between p-5 bg-gradient-to-b from-black/0 to-black/0 text-gray-50 transition-opacity duration-300">
+        <div className="flex flex-col p-3 bg-black/20 backdrop-blur-xs rounded-lg border-hsla shadow-lg">
+          <div className="flex items-center justify-between ">
+            <h1 className="bento-title special-font  select-none">{title}</h1>
             
           </div>
           {description && (
-            <p className="mt-3 max-w-64 text-xs md:text-sm shadow-md select-none line-clamp-3 text-gray-200">{description}</p>
+            <p className="mt-3 max-w-64 text-xs md:text-sm  select-none line-clamp-3 text-gray-50">{description}</p>
           )}
         </div>
         
@@ -171,7 +170,7 @@ const Projects = () => (
       </BentoTilt>
 
       <div className="grid w-full grid-cols-2 grid-rows-3 gap-7">
-        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:ms-0 h-96">
           <BentoCard
             src="images/newsscraper.jpg"
             title={
@@ -185,7 +184,7 @@ const Projects = () => (
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+        <BentoTilt className="bento-tilt_1  md:col-span-1 md:me-0 h-96">
           <BentoCard
             src="videos/feature-4.mp4"
             title={
@@ -198,7 +197,7 @@ const Projects = () => (
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+        <BentoTilt className="bento-tilt_1 row-span-1  md:col-span-1 md:ms-0 h-96">
           <BentoCard
             src="videos/feature-3.mp4"
             title={
@@ -211,9 +210,9 @@ const Projects = () => (
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_2">
+        <BentoTilt className="bento-tilt_1 row-span-1  md:col-span-1 md:ms-0 h-96">
           <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
-            <h1 className="bento-title special-font max-w-64 text-black">
+            <h1 className="bento-title text-7xl special-font max-w-64 text-black">
               M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
             </h1>
 

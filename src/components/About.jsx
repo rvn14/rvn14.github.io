@@ -3,10 +3,9 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import AnimatedTitle from "./AnimatedTitle";
 import { RiNextjsFill } from "react-icons/ri";
-import { DiCss3, DiHtml5, DiJavascript, DiReact, DiNodejs, DiPython, DiMongodb } from "react-icons/di";
-import { FaHtml5, FaReact, FaGitAlt, FaFigma } from "react-icons/fa";
+import { DiCss3, DiHtml5, DiJavascript, DiNodejs, DiPython, DiMongodb } from "react-icons/di";
+import { FaReact, FaGitAlt, FaFigma } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiFirebase } from "react-icons/si";
-import Aboutme from "./Aboutme";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,8 +34,8 @@ const About = () => {
 
 
   return (
-    <div id="about" className="w-full min-h-screen">
-      <div className="relative mb-12 mt-12 flex flex-col items-center gap-5">
+    <div id="about" className="w-full ">
+      <div className="relative mt-12 flex flex-col items-center gap-5">
         <div className="flex flex-col items-center justify-center gap-5">
           <p className="font-general text-sm uppercase md:text-[12px]">
             Welcome to My Portfolio
@@ -49,16 +48,16 @@ const About = () => {
         </div>
 
         <div>
-          
+
         </div>
 
-        <div className="flex flex-col items-center justify-center text-center">
-          <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center text-center pb-12">
+          {/* <div className="flex flex-col items-center justify-center">
             <p className="font-semibold text-lg">Hi! my name is Dasun Adithya</p>
             <p className="text-gray-500 w-2/3">
             <span>I am a <span className ="text-[#8e6fa3]" >Computer Science</span> undergraduate with strong coding skills and a passion for designing websites, interfaces, and graphics.</span>
             </p>
-          </div>
+          </div> */}
 
           <div className="skillset flex items-center justify-center gap-5 mt-5 flex-wrap max-w-3xl">
             <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
@@ -127,7 +126,6 @@ const About = () => {
             </div>
           </div>
         </div>
-
         
       </div>
 

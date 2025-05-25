@@ -15,6 +15,7 @@
   --font-orbitron-black: Orbitron-Black, sans-serif;
   --font-avant: Avant-Garde, sans-serif;
   --font-bruno: "Bruno Ace SC", sans-serif;
+  --font-inter: Inter, sans-serif;
 
   --color-blue-50: #dfdff0;
   --color-blue-75: #dfdff2;
@@ -86,7 +87,7 @@
 }
 
 @utility hero-heading {
-  @apply uppercase font-zentry font-black text-5xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
+  @apply uppercase font-zentry font-black text-7xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
 }
 
 @utility about-subtext {
@@ -159,13 +160,37 @@
   clip-path: polygon(29% 15%, 85% 30%, 50% 100%, 10% 64%);
 }
 
+@utility overlay {
+  @apply absolute top-0 left-0 w-full bg-white z-10;
+  transform-origin: center 15%;
+  height: 200%;
+}
+
+@utility logo-container {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  z-index: 20;
+
+}
+
 @layer utilities {
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
   body {
     width: 100dvw;
     overflow-x: hidden;
     background-color: #dfdff0;
     font-family: 'General Sans', sans-serif;
   }
+
 }
 
 @layer base {
@@ -203,7 +228,12 @@
     font-family: "Avant-Garde";
     src: url("/fonts/Avant-Garde.ttf");
   }
+  @font-face{
+    font-family: "Inter, sans-serif";
+    src: url("/fonts/Inter-Bold.woff2") format("woff2");
+  }
 }
+
 
 .indicator-line {
   @apply h-1 w-px rounded-full bg-white transition-all duration-200 ease-in-out;

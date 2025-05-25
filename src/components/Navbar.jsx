@@ -46,12 +46,12 @@ const NavBar = () => {
   return (
     <div
       ref={navContainerRef}
-      className="fixed inset-x-0 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6 rounded-4xl"
+      className="fixed inset-x-1 top-4 z-50 h-16 border-none transition-all duration-700 sm:inset-x-6 rounded-4xl"
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
           {/* Logo and Product button */}
-          <div className="flex items-center gap-4 ml-5">
+          <div className="flex items-center gap-4 sm:ml-5">
             <img src="/images/iconpro.png" alt="logo" className="w-10" />
             <div className="font-bruno text-blue-50 font-black text-xl pointer-events-none select-none">RVN14</div>
 

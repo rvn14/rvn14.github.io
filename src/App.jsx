@@ -6,12 +6,14 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import FadeInSection from './components/FadeInSection'
+
 
 function App() {
   return (
     <ReactLenis root>
-      <main className='main relative min-h-screen w-screen overflow-x-hidden'>
         <Navbar />
+      <main className='main relative min-h-screen w-screen overflow-x-hidden'>
         <Hero />
         <About />
         <Projects />
