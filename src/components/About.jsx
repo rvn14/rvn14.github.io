@@ -6,6 +6,7 @@ import { RiNextjsFill } from "react-icons/ri";
 import { DiCss3, DiHtml5, DiJavascript, DiNodejs, DiPython, DiMongodb } from "react-icons/di";
 import { FaReact, FaGitAlt, FaFigma } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiFirebase } from "react-icons/si";
+import { TbBrandThreejs } from "react-icons/tb";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -34,7 +35,7 @@ const About = () => {
 
 
   return (
-    <div id="about" className="w-full ">
+    <div id="about" className="w-full min-h-screen flex flex-col items-center justify-center">
       <div className="relative mt-12 flex flex-col items-center gap-5">
         <div className="flex flex-col items-center justify-center gap-5">
           <p className="font-general text-sm uppercase md:text-[12px]">
@@ -78,6 +79,11 @@ const About = () => {
             <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
               <FaReact className="text-4xl text-black" />
               <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">React</span>
+            </div>
+
+            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
+              <TbBrandThreejs className="text-4xl text-black" />
+              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">ThreeJS</span>
             </div>
             
             <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
