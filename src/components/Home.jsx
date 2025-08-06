@@ -53,9 +53,9 @@ const Home = () => {
                           containerClass="mt-2 text-lavender-100! font-light text-center"
               />
               <div className="flex flex-col items-center justify-center text-center mt-4">
-                <p className="font-semibold text-lg">Hi! my name is Dasun Adithya</p>
+                <p className="font-semibold text-lg">Hi! my name is <span className="text-lavender-400">Dasun Adithya</span></p>
                 <p className="text-gray-300 w-2/3">
-                <span>I am a <span className ="text-hero-vlt" >Computer Science</span> undergraduate with strong coding skills and a passion for designing websites, interfaces, and graphics.</span>
+                <span>I am a <span className ="text-lavender-400 font-semibold" >Computer Science</span> undergraduate with strong coding skills and a passion for designing websites, interfaces, and graphics.</span>
                 </p>
               </div>
 
