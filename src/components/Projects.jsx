@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useState, useRef } from "react";
 import { DiReact } from "react-icons/di";
@@ -80,7 +81,7 @@ export const BentoCard = ({ src, title, description, isComingSoon, repoLink, sit
       <div className="absolute top-0 z-10 flex size-full flex-col justify-between p-5 bg-gradient-to-b from-black/0 to-black/0 text-gray-50 transition-opacity duration-300">
         <div className="flex flex-col p-3 bg-black/20 backdrop-blur-xs rounded-lg border-hsla shadow-lg">
           <div className="flex items-center justify-between ">
-            <h1 className="bento-title special-font  select-none">{title}</h1>
+            <h1 className="bento-title special-font font-light select-none">{title}</h1>
             
           </div>
           {description && (
@@ -212,7 +213,7 @@ const Projects = () => (
 
         <BentoTilt className="bento-tilt_1 row-span-1  md:col-span-1 md:ms-0 h-96">
           <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
-            <h1 className="bento-title text-7xl special-font max-w-64 text-black">
+            <h1 className="bento-title text-7xl special-font font-light max-w-64 text-black">
               M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
             </h1>
 
