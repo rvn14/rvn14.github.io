@@ -1,5 +1,7 @@
 
 @import url('https://fonts.cdnfonts.com/css/general-sans') layer(base);
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300;400;500;600;700&family=Outfit:wght@100..900&display=swap');
+
 
 @import 'tailwindcss';
 ::-webkit-scrollbar{
@@ -7,6 +9,7 @@
 }
 
 @theme {
+  --font-outfit: "Outfit", sans-serif;
   --font-zentry: zentry, sans-serif;
   --font-general: general, sans-serif;
   --font-circular-web: circular-web, sans-serif;
@@ -17,13 +20,15 @@
   --font-bruno: "Bruno Ace SC", sans-serif;
   --font-inter: Inter, sans-serif;
 
+
   --color-blue-50: #dfdff0;
   --color-blue-75: #dfdff2;
   --color-blue-100: #f0f2fa;
   --color-blue-200: #010101;
   --color-blue-300: #4fb7dd;
 
-  --color-hero-btn: #c8b6ff;
+  --color-hero-btn: #b08ef5;
+  --color-charcoal: #0B0C0E
 
   --color-violet-300: #5724ff;
 
@@ -64,7 +69,7 @@
 }
 
 @utility floating-nav-white {
-  @apply bg-black rounded-4xl border;
+  @apply bg-white/5 rounded-4xl backdrop-blur-[6px] ;
 }
 
 @utility absolute-center {
@@ -104,8 +109,8 @@
 
 @utility animated-word {
   @apply special-font font-zentry font-black opacity-0;
-  transform: translate3d(10px, 51px, -60px) rotateY(60deg) rotateX(-40deg);
-  transform-origin: 50% 50% -150px !important;
+  transform: translate3d(0px, 50px, 0px) ;
+  transform-origin: 50% 50% 0px !important;
   will-change: opacity, transform;
 }
 
@@ -366,4 +371,36 @@
     transform: translateY(66%) scale(0.65);
     opacity: 0.8;
   }
+}
+
+
+.shiny-text {
+  color: #b5b5b5a4; /* Adjust this color to change intensity/style */
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  50% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
 }

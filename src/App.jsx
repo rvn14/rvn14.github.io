@@ -1,21 +1,19 @@
 import './App.css'
 import { ReactLenis } from 'lenis/react'
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import FadeInSection from './components/FadeInSection'
+import Home from './components/Home'
+import NavBar from './components/Navbar'
+
 
 
 function App() {
   return (
     <ReactLenis root>
-        <Navbar />
+      <NavBar/>
       <main className='main relative min-h-screen w-screen overflow-x-hidden'>
-        <Hero />
-        <About />
+        <Home />
         <Projects />
         <Contact />
         <Footer />

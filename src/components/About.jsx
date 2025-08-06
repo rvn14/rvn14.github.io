@@ -60,77 +60,7 @@ const About = () => {
             </p>
           </div> */}
 
-          <div className="skillset flex items-center justify-center gap-5 mt-5 flex-wrap max-w-3xl">
-            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
-              <DiHtml5 className="text-4xl text-black" />
-              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">HTML5</span>
-            </div>
-            
-            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
-              <DiCss3 className="text-4xl text-black" />
-              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">CSS3</span>
-            </div>
-            
-            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
-              <DiJavascript className="text-4xl text-black" />
-              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">JavaScript</span>
-            </div>
-            
-            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
-              <FaReact className="text-4xl text-black" />
-              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">React</span>
-            </div>
-
-            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
-              <TbBrandThreejs className="text-4xl text-black" />
-              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">ThreeJS</span>
-            </div>
-            
-            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
-              <SiTypescript className="text-4xl text-black" />
-              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">TypeScript</span>
-            </div>
-
-            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
-              <SiTailwindcss className="text-4xl text-black" />
-              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">Tailwind CSS</span>
-            </div>
-
-            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
-              <RiNextjsFill className="text-4xl text-black" />
-              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">Next.js</span>
-            </div>
-            
-            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
-              <DiNodejs className="text-4xl text-black" />
-              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">Node.js</span>
-            </div>
-            
-            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
-              <DiPython className="text-4xl text-black" />
-              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">Python</span>
-            </div>
-            
-            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
-              <DiMongodb className="text-4xl text-black" />
-              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">MongoDB</span>
-            </div>
-            
-            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
-              <FaGitAlt className="text-4xl text-black" />
-              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">Git</span>
-            </div>
-            
-            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
-              <FaFigma className="text-4xl text-black" />
-              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">Figma</span>
-            </div>
-            
-            <div className="skill-item bg-black/10 rounded-full p-2 hover:scale-105 transition-transform duration-300 relative group">
-              <SiFirebase className="text-4xl text-black" />
-              <span className="skill-tooltip absolute -bottom-9 left-1/2 -translate-x-1/2 bg-black text-white text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">Firebase</span>
-            </div>
-          </div>
+          
         </div>
         
       </div>
