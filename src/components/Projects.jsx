@@ -144,9 +144,9 @@ export const BentoCard = ({ src, title, description, isComingSoon, repoLink, sit
 };
 
 const Projects = () => (
-  <section className="bg-black py-8">
+  <section className="bg-black">
     <div className="container mx-auto px-3 md:px-10">
-      <div className="px-5 py-16">
+      <div className="px-5 pb-16">
         <p className="font-zentry special-font text-4xl md:text-9xl text-blue-50">
           PRO<b>J</b>ECTS
         </p>
@@ -212,7 +212,7 @@ const Projects = () => (
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_1 row-span-1  md:col-span-1 md:ms-0 h-96">
-          <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
+          <div className="flex size-full flex-col justify-between bg-lavender-500 p-5">
             <h1 className="bento-title text-7xl special-font font-light max-w-64 text-black">
               M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
             </h1>
