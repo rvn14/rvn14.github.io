@@ -105,9 +105,7 @@
   }
 }
 
-@utility skills-container {
-  @apply group flex items-center justify-center h-56 border-r border-gray-300 p-16 hover:bg-black hover:text-white transition-colors duration-300;
-}
+
 
 @utility hero-heading {
   @apply uppercase font-zentry font-black text-7xl sm:right-10 sm:text-7xl md:text-9xl lg:text-[12rem];
