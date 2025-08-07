@@ -59,12 +59,12 @@ const Home = () => {
         {/* --- MAIN CARD --- */}
         <div className="w-full max-w-6xl min-h-100 h-full bg-[#0B0C0E] rounded-2xl z-10 -mt-40 shadow-[0px_-5px_40px_6px_rgba(204,182,247,0.25)] flex flex-col items-center p-4 relative">
           <div className="absolute -bottom-8 w-screen h-2/3 bg-gradient-to-t from-black via-black to-transparent pointer-events-none z-10"></div>
-          <div className="z-10 w-full text-center mb-4 select-none">
+          <div className="z-10 w-full flex items-center text-center justify-center mb-4 select-none">
             <ShinyText
               text="Welcome to My Portfolio!"
               disabled={false}
               speed={5}
-              className="font-general text-sm uppercase md:text-[12px]"
+              className="font-general text-sm uppercase md:text-[12px] text-center"
             />
           </div>
           <div className="flex flex-col items-center inset-0 z-10 w-full h-full rounded-2xl relative">

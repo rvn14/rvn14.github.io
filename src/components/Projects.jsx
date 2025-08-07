@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { DiReact } from "react-icons/di";
 import { FaGithub } from "react-icons/fa6";
 import { TiLocationArrow } from "react-icons/ti";
+import ShinyText from "./ShinyText";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -83,14 +84,14 @@ export const BentoCard = ({ src, title, description, isComingSoon, repoLink, sit
         src={src}
         alt={typeof title === 'string' ? title : 'Project thumbnail'}
       />
-      <div className="absolute top-0 z-10 flex size-full flex-col justify-between p-5 bg-gradient-to-b from-black/0 to-black/0 text-gray-50 transition-opacity duration-300">
+      <div className="absolute top-0 z-10 flex size-full flex-col justify-between p-5 bg-gradient-to-b from-black/0 to-black/0 text-lavender-100 transition-opacity duration-300">
         <div className="flex flex-col p-3 bg-black/20 backdrop-blur-xs rounded-lg border-hsla shadow-lg">
           <div className="flex items-center justify-between ">
             <h1 className="bento-title special-font font-light select-none">{title}</h1>
             
           </div>
           {description && (
-            <p className="mt-3 max-w-64 text-xs md:text-sm  select-none line-clamp-3 text-gray-50">{description}</p>
+            <p className="mt-3 max-w-64 text-xs md:text-sm  select-none line-clamp-3 text-lavender-100">{description}</p>
           )}
         </div>
         
@@ -102,7 +103,7 @@ export const BentoCard = ({ src, title, description, isComingSoon, repoLink, sit
                 onMouseMove={(e) => handleMouseMove(e, repoButtonRef)}
                 onMouseEnter={() => setRepoHoverOpacity(1)}
                 onMouseLeave={() => setRepoHoverOpacity(0)}
-                className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black/80 px-5 py-2 text-xs uppercase text-gray-50"
+                className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black/80 px-5 py-2 text-xs uppercase text-lavender-100"
               >
                 <div
                   className="pointer-events-none absolute -inset-px transition-opacity duration-500"
@@ -125,7 +126,7 @@ export const BentoCard = ({ src, title, description, isComingSoon, repoLink, sit
                 onMouseMove={(e) => handleMouseMove(e, siteButtonRef)}
                 onMouseEnter={() => setSiteHoverOpacity(1)}
                 onMouseLeave={() => setSiteHoverOpacity(0)}
-                className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black/80 px-5 py-2 text-xs uppercase text-gray-50"
+                className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black/80 px-5 py-2 text-xs uppercase text-lavender-100"
               >
                 <div
                   className="pointer-events-none absolute -inset-px transition-opacity duration-500"
@@ -160,10 +161,13 @@ const Projects = () => {
           <p className="font-zentry special-font text-4xl md:text-9xl text-lavender-100">
             PRO<b>J</b>ECTS
           </p>
-          <p className="max-w-md text-lg text-lavender-100 opacity-50">
-            A collection of my projects, showcasing my skills and creativity.
-            I am constantly working on new projects, so stay tuned for more updates!
-          </p>
+          <ShinyText
+              text="A collection of my projects, showcasing my skills and creativity.
+            I am constantly working on new projects, so stay tuned for more updates!"
+              disabled={false}
+              speed={5}
+              className="max-w-md text-lg text-lavender-100"
+            />
         </div>
 
         <BentoTilt className="border-hsla bento-tilt_1 relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
