@@ -25,6 +25,7 @@ const AnimatedTitle = ({ title, containerClass }) => {
         {
           opacity: 1,
           transform: "translate3d(0, 0, 0) rotateY(0deg) rotateX(0deg)",
+          duration: 1,
           ease: "power2.inOut",
           stagger: 0.02,
         },
@@ -32,7 +33,7 @@ const AnimatedTitle = ({ title, containerClass }) => {
       );
     }, containerRef);
 
-    return () => ctx.revert(); // Clean up on unmount
+    return () => ctx.revert(); 
   }, []);
 
   return (

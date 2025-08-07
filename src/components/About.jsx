@@ -7,8 +7,8 @@ import { SiMysql, SiSpringboot, SiTailwindcss, SiTypescript } from "react-icons/
 
 const About = () => {
   return (
-    <section className="w-full min-h-dvh bg-black p-2">
-      <div className="container abcont mx-auto px-4 py-12 mt-8 min-h-dvh bg-lavender-100 rounded-xl">
+    <section className="w-full  bg-black pt-2 px-2 lg:px-36">
+      <div className="container abcont mx-auto p-4 pt-12 mt-8 bg-lavender-100 rounded-xl">
         <AnimatedText
           text="MODERN"
           className="anim text-7xl lg:text-8xl font-outfit tracking-tight! text-center font-bold text-black! w-full"

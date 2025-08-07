@@ -8,6 +8,11 @@
   display: none
 }
 
+*{
+  box-sizing: border-box;
+
+}
+
 @theme {
   --font-outfit: "Outfit", sans-serif;
   --font-zentry: zentry, sans-serif;

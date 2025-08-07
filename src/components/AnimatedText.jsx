@@ -51,7 +51,7 @@ const AnimatedText = ({ text, className }) => {
       scrollTrigger: {
         trigger: textRef.current,
         start: "top 90%",
-        toggleActions: "play none none none",
+        toggleActions: "play reset none reset",  
         // markers: true,
       }
     });
@@ -91,7 +91,7 @@ const AnimatedText = ({ text, className }) => {
   return (
     <div
       ref={textRef}
-      className={`flex flex-wrap justify-center font-extrabold ${className}`}
+      className={`flex flex-wrap justify-center font-extrabold select-none ${className}`}
       style={{ fontVariantLigatures: "none", gap: "0", lineHeight: 1, letterSpacing: "0" }}
     >
       {splitLetters(text)}

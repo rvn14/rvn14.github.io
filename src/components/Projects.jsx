@@ -1,14 +1,19 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { useState, useRef } from "react";
+import { gsap } from "gsap";
+import { useEffect, useRef, useState } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { DiReact } from "react-icons/di";
 import { FaGithub } from "react-icons/fa6";
 import { TiLocationArrow } from "react-icons/ti";
 
+gsap.registerPlugin(ScrollTrigger);
 
 export const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
   const itemRef = useRef(null);
+
+  
 
   const handleMouseMove = (event) => {
     if (!itemRef.current) return;
@@ -143,89 +148,95 @@ export const BentoCard = ({ src, title, description, isComingSoon, repoLink, sit
   );
 };
 
-const Projects = () => (
-  <section className="bg-black">
-    <div className="container mx-auto px-3 md:px-10">
-      <div className="px-5 pb-16">
-        <p className="font-zentry special-font text-4xl md:text-9xl text-blue-50">
-          PRO<b>J</b>ECTS
-        </p>
-        <p className="max-w-md text-lg text-blue-50 opacity-50">
-          A collection of my projects, showcasing my skills and creativity.
-          I am constantly working on new projects, so stay tuned for more updates!
-        </p>
+const Projects = () => {
+
+  
+
+  return (
+    
+      <section className="w-full bg-black z-1 pb-16 pt-16 lg:pt-36">
+      <div className="container mx-auto px-3 md:px-10">
+        <div className="px-5 pb-16">
+          <p className="font-zentry special-font text-4xl md:text-9xl text-lavender-100">
+            PRO<b>J</b>ECTS
+          </p>
+          <p className="max-w-md text-lg text-lavender-100 opacity-50">
+            A collection of my projects, showcasing my skills and creativity.
+            I am constantly working on new projects, so stay tuned for more updates!
+          </p>
+        </div>
+
+        <BentoTilt className="border-hsla bento-tilt_1 relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
+          <BentoCard
+            src="images/pizzario.jpg"
+            title={
+              <>
+                PIZZ<b>A</b>RIO
+              </>
+            }
+            description="A fuly functional Pizza Restaurant website, built with NextJS, ThreeJS and Tailwind CSS."
+            repoLink="https://github.com/rvn14/pizzario"
+            siteLink="https://pizzario-rvn14.vercel.app"
+          />
+        </BentoTilt>
+
+        <div className="grid w-full grid-cols-2 grid-rows-2 gap-7">
+          <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:ms-0 h-96">
+            <BentoCard
+              src="images/newsscraper.jpg"
+              title={
+                <>
+                  N<b>E</b>WS Scraper
+                </>
+              }
+              description="A web scraper that collects news articles from various sources and gives more accurate news in a nice web app."
+              repoLink="https://github.com/rvn14/newsapp"
+              siteLink="https://newsapp-snowy-ten.vercel.app"
+            />
+          </BentoTilt>
+
+          <BentoTilt className="bento-tilt_1  md:col-span-1 md:me-0 h-96">
+            <BentoCard
+              src="videos/feature-4.mp4"
+              title={
+                <>
+                  az<b>u</b>l
+                </>
+              }
+              description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
+              
+            />
+          </BentoTilt>
+
+          <BentoTilt className="bento-tilt_1 row-span-1  md:col-span-1 md:ms-0 h-96">
+            <BentoCard
+              src="videos/feature-3.mp4"
+              title={
+                <>
+                  n<b>e</b>xus
+                </>
+              }
+              description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+              
+            />
+          </BentoTilt>
+
+          <BentoTilt className="bento-tilt_1 row-span-1  md:col-span-1 md:ms-0 h-96">
+            <div className="flex size-full flex-col justify-between bg-lavender-500 p-5">
+              <h1 className="bento-title text-7xl special-font font-light max-w-64 text-black">
+                M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
+              </h1>
+
+              <TiLocationArrow className="m-5 scale-5 self-end" />
+            </div>
+          </BentoTilt>
+
+          
+
+        </div>
       </div>
-
-      <BentoTilt className="border-hsla bento-tilt_1 relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
-        <BentoCard
-          src="images/pizzario.jpg"
-          title={
-            <>
-              PIZZ<b>A</b>RIO
-            </>
-          }
-          description="A fuly functional Pizza Restaurant website, built with NextJS, ThreeJS and Tailwind CSS."
-          repoLink="https://github.com/rvn14/pizzario"
-          siteLink="https://pizzario-rvn14.vercel.app"
-        />
-      </BentoTilt>
-
-      <div className="grid w-full grid-cols-2 grid-rows-3 gap-7">
-        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:ms-0 h-96">
-          <BentoCard
-            src="images/newsscraper.jpg"
-            title={
-              <>
-                N<b>E</b>WS Scraper
-              </>
-            }
-            description="A web scraper that collects news articles from various sources and gives more accurate news in a nice web app."
-            repoLink="https://github.com/rvn14/newsapp"
-            siteLink="https://newsapp-snowy-ten.vercel.app"
-          />
-        </BentoTilt>
-
-        <BentoTilt className="bento-tilt_1  md:col-span-1 md:me-0 h-96">
-          <BentoCard
-            src="videos/feature-4.mp4"
-            title={
-              <>
-                az<b>u</b>l
-              </>
-            }
-            description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
-            
-          />
-        </BentoTilt>
-
-        <BentoTilt className="bento-tilt_1 row-span-1  md:col-span-1 md:ms-0 h-96">
-          <BentoCard
-            src="videos/feature-3.mp4"
-            title={
-              <>
-                n<b>e</b>xus
-              </>
-            }
-            description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
-            
-          />
-        </BentoTilt>
-
-        <BentoTilt className="bento-tilt_1 row-span-1  md:col-span-1 md:ms-0 h-96">
-          <div className="flex size-full flex-col justify-between bg-lavender-500 p-5">
-            <h1 className="bento-title text-7xl special-font font-light max-w-64 text-black">
-              M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
-            </h1>
-
-            <TiLocationArrow className="m-5 scale-5 self-end" />
-          </div>
-        </BentoTilt>
-
-        
-
-      </div>
-    </div>
-  </section>
-);
+    </section>
+  )
+}
 
 export default Projects;
