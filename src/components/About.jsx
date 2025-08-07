@@ -8,24 +8,24 @@ import { SiMysql, SiSpringboot, SiTailwindcss, SiTypescript } from "react-icons/
 const About = () => {
   return (
     <section className="w-full  bg-black pt-2 px-2 lg:px-36 ">
-      <div className="container abcont mx-auto p-4 pt-4 mt-8 bg-lavender-100 rounded-xl">
-        <p className="font-general text-sm uppercase md:text-[12px] text-center text-zinc-700 mb-8">What I&rsquo;m Working with</p>
+      <div className="container abcont mx-auto p-2 md:p-4 pt-4 mt-8 bg-lavender-100 rounded-xl">
+        <p className="font-general text-sm uppercase md:text-[12px] text-center text-zinc-700 mb-6">What I&rsquo;m Working with</p>
         <AnimatedText
           text="MODERN"
-          className="anim text-7xl lg:text-8xl font-outfit tracking-tight! text-center font-bold text-black! w-full"
+          className="anim text-5xl sm:text-7xl lg:text-8xl font-outfit tracking-tight! text-center font-bold text-black! w-full"
         />
         <AnimatedText
           text="TECH STACK"
-          className="anim text-7xl lg:text-8xl font-outfit tracking-tight! text-center font-bold text-black! w-full"
+          className="anim text-5xl sm:text-7xl lg:text-8xl font-outfit tracking-tight! text-center font-bold text-black! w-full"
         />
 
-        <div className="mt-16">
+        <div className="mt-12">
           {/* Top grid: 3 columns, responsive */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 border-b border-gray-300">
-            <div className="group flex items-center justify-center h-56 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 border-b border-gray-300">
+            <div className="group flex items-center justify-center h-30 md:h-56 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
               <DiReact className="text-8xl text-black group-hover:text-white transition-colors duration-500" />
             </div>
-            <div className="group flex items-center justify-center h-56 border-r border-gray-300 p-16 hover:bg-black hover:text-white transition-colors duration-500">
+            <div className="group flex items-center justify-center h-30 md:h-56 border-r border-gray-300 p-4 md:p-16 hover:bg-black hover:text-white transition-colors duration-500">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 394 79" className="transition-colors duration-500 group-hover:text-white text-black">
                 <path fill="currentColor" d="M261.919 0.0330722H330.547V12.7H303.323V79.339H289.71V12.7H261.919V0.0330722Z"></path>
                 <path fill="currentColor" d="M149.052 0.0330722V12.7H94.0421V33.0772H138.281V45.7441H94.0421V66.6721H149.052V79.339H80.43V12.7H80.4243V0.0330722H149.052Z"></path>
@@ -37,37 +37,37 @@ const About = () => {
                 <path fill="currentColor" d="M387.691 54.5338C387.544 53.1251 386.898 52.0254 385.773 51.2438C384.638 50.4531 383.172 50.0623 381.373 50.0623C380.11 50.0623 379.022 50.2532 378.118 50.6258C377.214 51.0075 376.513 51.5164 376.033 52.1617C375.554 52.807 375.314 53.5432 375.295 54.3703C375.295 55.061 375.461 55.6608 375.784 56.1607C376.107 56.6696 376.54 57.0968 377.103 57.4422C377.656 57.7966 378.274 58.0874 378.948 58.3237C379.63 58.56 380.313 58.76 380.995 58.9236L384.14 59.6961C385.404 59.9869 386.631 60.3778 387.802 60.8776C388.973 61.3684 390.034 61.9955 390.965 62.7498C391.897 63.5042 392.635 64.413 393.179 65.4764C393.723 66.5397 394 67.7848 394 69.2208C394 71.1566 393.502 72.8562 392.496 74.3285C391.491 75.7917 390.043 76.9369 388.143 77.764C386.252 78.582 383.965 79 381.272 79C378.671 79 376.402 78.6002 374.493 77.8004C372.575 77.0097 371.08 75.8463 370.001 74.3194C368.922 72.7926 368.341 70.9294 368.258 68.7391H374.235C374.318 69.8842 374.687 70.8386 375.314 71.6111C375.95 72.3745 376.78 72.938 377.795 73.3197C378.819 73.6923 379.962 73.8832 381.226 73.8832C382.545 73.8832 383.707 73.6832 384.712 73.2924C385.708 72.9016 386.492 72.3564 387.055 71.6475C387.627 70.9476 387.913 70.1206 387.922 69.1754C387.913 68.312 387.654 67.5939 387.156 67.0304C386.649 66.467 385.948 65.9944 385.053 65.6127C384.15 65.231 383.098 64.8856 381.899 64.5857L378.081 63.6223C375.323 62.9225 373.137 61.8592 371.541 60.4323C369.937 59.0054 369.143 57.115 369.143 54.7429C369.143 52.798 369.678 51.0894 370.758 49.6261C371.827 48.1629 373.294 47.0268 375.148 46.2179C377.011 45.4 379.114 45 381.456 45C383.836 45 385.92 45.4 387.719 46.2179C389.517 47.0268 390.929 48.1538 391.952 49.5897C392.976 51.0257 393.511 52.6707 393.539 54.5338H387.691Z"></path>
               </svg>
             </div>
-            <div className="group flex items-center justify-center h-56 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
+            <div className="group flex items-center justify-center h-30 md:h-56 border-r border-gray-300 p-4 md:p-16 hover:bg-black hover:text-white transition-colors duration-500">
               <SiTypescript className="text-8xl text-black group-hover:text-white transition-colors duration-500" />
             </div>
-            <div className="group flex items-center justify-center h-56 hover:bg-black hover:text-white transition-colors duration-500">
+            <div className="group flex items-center justify-center h-30 md:h-56  border-gray-300 p-4 md:p-16 hover:bg-black hover:text-white transition-colors duration-500">
               <FaPython className="text-8xl text-black group-hover:text-white transition-colors duration-500" />
             </div>
           </div>
           {/* Bottom grid: 7 columns, responsive */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8">
-            <div className="group flex items-center justify-center h-40 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
+          <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-8">
+            <div className="group flex items-center justify-center h-30 md:h-40 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
               <FaHtml5 className="text-6xl text-black group-hover:text-white transition-colors duration-500" />
             </div>
-            <div className="group flex items-center justify-center h-40 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
+            <div className="group flex items-center justify-center h-30 md:h-40 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
               <SiTailwindcss className="text-6xl text-black group-hover:text-white transition-colors duration-500" />
             </div>
-            <div className="group flex items-center justify-center h-40 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
+            <div className="group flex items-center justify-center h-30 md:h-40 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
               <FaJs className="text-6xl text-black group-hover:text-white transition-colors duration-500" />
             </div>
-            <div className="group flex items-center justify-center h-40 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
+            <div className="group flex items-center justify-center h-30 md:h-40 md:border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
               <FaNodeJs className="text-6xl text-black group-hover:text-white transition-colors duration-500" />
             </div>
-            <div className="group flex items-center justify-center h-40 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
+            <div className="group flex items-center justify-center h-30 md:h-40 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
               <FaJava className="text-6xl text-black group-hover:text-white transition-colors duration-500" />
             </div>
-            <div className="group flex items-center justify-center h-40 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
+            <div className="group flex items-center justify-center h-30 md:h-40 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-500">
               <SiSpringboot className="text-6xl text-black group-hover:text-white transition-colors duration-500" />
             </div>
-            <div className="group flex items-center justify-center h-40 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-300">
+            <div className="group flex items-center justify-center h-30 md:h-40 border-r border-gray-300 hover:bg-black hover:text-white transition-colors duration-300">
               <DiMongodb className="text-6xl text-black group-hover:text-white transition-colors duration-500" />
             </div>
-            <div className="group flex items-center justify-center h-40 hover:bg-black hover:text-white transition-colors duration-300">
+            <div className="group flex items-center justify-center h-30 md:h-40 hover:bg-black hover:text-white transition-colors duration-300">
               <SiMysql className="text-6xl text-black group-hover:text-white transition-colors duration-500" />
             </div>
           </div>

@@ -155,7 +155,7 @@ const Projects = () => {
 
   return (
     
-      <section className="w-full bg-black z-1 pb-16 pt-16 lg:pt-36">
+      <section className="relative w-full bg-black z-1 pb-16 pt-16 lg:pt-36">
       <div className="container mx-auto px-3 md:px-10">
         <div className="px-5 pb-16">
           <p className="font-zentry special-font text-4xl md:text-9xl text-lavender-100">
