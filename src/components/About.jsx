@@ -7,7 +7,7 @@ import { SiMysql, SiSpringboot, SiTailwindcss, SiTypescript } from "react-icons/
 
 const About = () => {
   return (
-    <section className="w-full  bg-black pt-2 px-2 lg:px-36 ">
+    <section className="w-full bg-black pt-2 px-2 lg:px-36  ">
       <div className="container abcont mx-auto p-2 md:p-4 pt-4 mt-8 bg-lavender-100 rounded-xl">
         <p className="font-general text-sm uppercase md:text-[12px] text-center text-zinc-700 mb-6">What I&rsquo;m Working with</p>
         <AnimatedText
