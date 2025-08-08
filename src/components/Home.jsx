@@ -1,4 +1,5 @@
 import AnimatedTitle from "./AnimatedTitle"
+import Experience from "./Experience";
 import ShinyText from "./ShinyText"
 import Waves from "./Waves"
 
@@ -100,8 +101,14 @@ const Home = () => {
           </div>
         </div>
         
-        <div className="container bg-black min-h-dvh rounded-xl">
-
+        <div className="container bg-black min-h-dvh rounded-xl mt-8 flex flex-col items-center justify-center overflow-clip">
+          <ShinyText
+              text="What have I done so far"
+              disabled={false}
+              speed={5}
+              className="font-general text-sm uppercase md:text-[12px] text-center mb-8"
+            />
+            <Experience />
         </div>
         
       </section>
