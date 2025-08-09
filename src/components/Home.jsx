@@ -162,7 +162,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="container w-full md:max-w-5xl mx-auto my-8 flex flex-col items-center">
+        <div className="container w-full md:max-w-5xl mx-auto mb-8 flex flex-col items-center">
           <ShinyText
             text="What shaped me"
             disabled={false}
