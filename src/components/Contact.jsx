@@ -110,8 +110,9 @@ const Contact = () => {
                 ></textarea>
               </div>
               <button 
+              
                 type="submit" 
-                className="px-6 py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                className="px-6 disabled:bg-[#f8d984] py-2 bg-[#ffb900] text-white font-medium rounded-md hover:bg-[#e28e00] focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
               >
                 Send Message
               </button>

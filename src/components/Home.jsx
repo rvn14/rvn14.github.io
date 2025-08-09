@@ -1,14 +1,46 @@
+/* eslint-disable no-unused-vars */
+import { useEffect, useRef } from "react";
 import AnimatedTitle from "./AnimatedTitle"
-import Experience from "./Experience";
 import ShinyText from "./ShinyText"
 import Waves from "./Waves"
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Experience from "./Experience";
+import LoopText from "./LoopText";
 
+gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
+// const containerRefs = useRef([]);
+// const itemRefs = useRef([]);
+
+// useEffect(() => {
+//   containerRefs.current.forEach((container, i) => {
+//     if (container && itemRefs.current[i]) {
+//       gsap.to(itemRefs.current[i], {
+//         width: "0",
+//         duration: 1.5,
+//         stagger: 0.5,
+//         ease: "power4.inOut",
+//         scrollTrigger: {
+//           trigger: container,
+//           start: "center 100%",
+//           markers: true,
+//           toggleActions: "play none none none",
+//         },
+//       });
+//     }
+//   });
+// }, []);
+//   
+
+
+
+
   return (
     <main className="w-full min-h-dvh bg-black">
       {/* HERO SECTION */}
-      <section className="relative h-[50vh] md:h-dvh flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative h-[65vh] md:h-dvh flex flex-col items-center justify-center overflow-hidden">
         {/* Aurora Video BG */}
         {/* <video
           src="/video/Aurora.mp4"
@@ -22,7 +54,7 @@ const Home = () => {
           autoPlay
           loop
           muted
-          className="absolute inset-0 object-cover object-bottom w-full h-[50vh] md:h-dvh scale-103 z-0 mix-blend-screen"
+          className="absolute inset-0 object-cover object-bottom w-full h-[65vh] md:h-dvh scale-103 z-0 mix-blend-screen"
         />
 
         {/* Waves Overlay */}
@@ -61,19 +93,19 @@ const Home = () => {
       </section>
 
       {/* ABOUT/INFO SECTION */}
-      <section className="flex flex-col items-center text-lavender-100 relative lg:px-36 pb-4">
+      <section  className="flex flex-col items-center text-lavender-100 relative px-2 lg:px-36 pb-6">
         
         
 
         {/* --- MAIN CARD --- */}
-        <div className="w-full max-w-6xl min-h-100 h-full bg-[#0B0C0E] rounded-2xl z-10  shadow-[0px_-5px_40px_6px_rgba(204,182,247,0.25)] flex flex-col items-center p-4 relative">
+        <div className="w-full max-w-6xl  min-h-100 bg-[#0B0C0E] md:rounded-2xl z-10  md:shadow-[0px_-5px_40px_6px_rgba(204,182,247,0.25)] flex flex-col items-center px-2 pt-2 md:p-4 relative">
           <div className="absolute -bottom-8 w-screen h-2/3 bg-gradient-to-t from-black via-black to-transparent pointer-events-none z-10"></div>
-          <div className="z-10 w-full flex items-center text-center justify-center mb-4 select-none">
+          <div className="z-10 w-full flex items-center text-center justify-center mb-2 md:mb-4 select-none">
             <ShinyText
               text="Welcome to My Portfolio!"
               disabled={false}
               speed={5}
-              className="font-general text-sm uppercase md:text-[12px] text-center"
+              className="font-general text-xs md:text-sm uppercase md:text-[12px] text-center"
             />
 
           </div>
@@ -100,17 +132,36 @@ const Home = () => {
             </div>
           </div>
         </div>
-        
-        <div className="container bg-black min-h-dvh rounded-xl mt-8 flex flex-col items-center justify-center overflow-clip">
-          <ShinyText
-              text="What have I done so far"
-              disabled={false}
-              speed={5}
-              className="font-general text-sm uppercase md:text-[12px] text-center mb-8"
-            />
-            <Experience />
+
+        <div className="container mx-auto my-8 flex flex-col items-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center font-outfit text-lavender-100 uppercase">
+            {/* Card 1 */}
+            <div className="bg-[#0B0C0E] p-4 sm:p-6 w-full max-w-xs h-auto rounded-2xl shadow-md flex flex-col items-center ">
+              <div className="w-full aspect-[6/5] rounded-xl overflow-hidden mb-6">
+                <img src="images/gif1.gif" alt="" className="w-full h-full object-cover" />
+              </div>
+              <LoopText text="Creative" className="text-2xl sm:text-3xl tracking-widest font-semibold mt-2 text-center"/>
+              <LoopText text="Designer" className="text-xl sm:text-2xl tracking-widest font-semibold text-center"/>
+            </div>
+            {/* Card 2 */}
+            <div className="bg-[#0B0C0E] p-4 sm:p-6 w-full max-w-xs h-auto rounded-2xl shadow-md flex flex-col items-center ">
+              <div className="w-full aspect-[6/5] rounded-xl overflow-hidden mb-6">
+                <img src="images/gif2.gif" alt="" className="w-full h-full object-cover" />
+              </div>
+              <LoopText text="Analytical" className="text-2xl sm:text-3xl tracking-widest font-semibold mt-2 text-center"/>
+              <LoopText text="Thinker" className="text-xl sm:text-2xl tracking-widest font-semibold text-center"/>
+            </div>
+            {/* Card 3 */}
+            <div className="bg-[#0B0C0E] p-4 sm:p-6 w-full max-w-xs h-auto rounded-2xl shadow-md flex flex-col items-center ">
+              <div className="w-full aspect-[6/5] rounded-xl overflow-hidden mb-6">
+                <img src="images/gif3.gif" alt="" className="w-full h-full object-cover" />
+              </div>
+              <LoopText text="Fullstack" className="text-2xl sm:text-3xl tracking-widest font-semibold mt-2 text-center"/>
+              <LoopText text="Developer" className="text-xl sm:text-2xl tracking-widest font-semibold text-center"/>
+            </div>
+          </div>
         </div>
-        
+
       </section>
     </main>
   );

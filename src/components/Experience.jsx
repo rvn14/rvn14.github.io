@@ -64,17 +64,19 @@ const Experience = () => {
 
   return (
    
-    <div className="exp container relative flex bg-[#0B0C0E] w-full min-h-144 rounded-xl m-0 py-1 overflow-clip select-none">
-      <div className='w-full m-0 z-2 absolute'>
+    <div className="exp container relative flex bg-[#0B0C0E] w-full min-h-144 rounded-xl overflow-clip select-none">
+      <div className='w-full z-2 absolute'>
 
-      <div className='exp flex flex-col justify-center w-full h-fit text-lavender-100 '>
+      <div className='exp flex flex-col justify-center w-full h-full text-lavender-100 '>
           {data.map((item, index) => (
-            <div className='flex items-center justify-between h-36 px-8 md:px-16 border-b-[1px] border-b-lavender-100/20' key={index}>
+            <div className='flex items-center justify-between h-36 px-8 md:px-16 border-b-[1px] border-b-lavender-100/20 last:border-b-0' key={index}
+            onMouseOver={() => setselected(index)}
+              onMouseLeave={() => setselected(null)}
+            >
               <div className='exp-year text-4xl md:text-5xl pr-4 font-outfit font-extrabold'>{item.year}</div>
               <div className='text-right flex flex-col items-end'>
-                <div className='text-2xl md:text-3xl font-outfit font-black'
-                  onMouseOver={() => setselected(index)}
-                  onMouseLeave={() => setselected(null)}
+                <div className='text-2xl md:text-3xl font-outfit font-black '
+                  
                 >{item.title}
                 </div>
                 <div className='exp-description text-xs md:text-base font-poppins font-light text-lavender-100/50'>{item.description}</div>
@@ -85,14 +87,15 @@ const Experience = () => {
 
         <div className='exp flex flex-col justify-center w-full h-full descriptions text-[#0B0C0E] '>
           {data.map((item, index) => (
-            <div className='flex items-center justify-between h-36 px-8 md:px-16 bg-lavender-500 description border-b-2 border-b-lavender-500' key={index}
+            <div className='flex items-center justify-between h-36 px-8 md:px-16 bg-lavender-500 description border-b-2 border-b-lavender-500 last:border-b-0' key={index}
             style={{clipPath: selected === index ? "inset(0 0 0)" : "inset(50% 0 50%"}}
+            onMouseOver={() => setselected(index)}
+                onMouseLeave={() => setselected(null)}
             >
               <div className='exp-year text-4xl md:text-5xl pr-4 font-outfit font-extrabold'>{item.year}</div>
               <div className='text-right flex flex-col items-end'>
               <div className='text-2xl md:text-3xl font-outfit font-black'
-                onMouseOver={() => setselected(index)}
-                onMouseLeave={() => setselected(null)}
+                
               >{item.title}
               </div>
               <div className='exp-description text-m font-poppins font-light '>{item.hidden}</div>
