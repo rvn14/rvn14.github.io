@@ -133,33 +133,43 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="container mx-auto my-8 flex flex-col items-center">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center font-outfit text-lavender-100 uppercase">
+        <div className="container mx-auto w-full md:max-w-5xl my-8 flex flex-col items-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center font-outfit text-lavender-100 uppercase">
             {/* Card 1 */}
             <div className="bg-[#0B0C0E] p-4 sm:p-6 w-full max-w-xs h-auto rounded-2xl shadow-md flex flex-col items-center ">
               <div className="w-full aspect-[6/5] rounded-xl overflow-hidden mb-6">
                 <img src="images/gif1.gif" alt="" className="w-full h-full object-cover" />
               </div>
-              <LoopText text="Creative" className="text-2xl sm:text-3xl tracking-widest font-semibold mt-2 text-center"/>
-              <LoopText text="Designer" className="text-xl sm:text-2xl tracking-widest font-semibold text-center"/>
+              <LoopText text="Creative" className="text-3xl tracking-widest font-semibold mt-2 text-center"/>
+              <LoopText text="Designer" className="text-2xl tracking-widest font-semibold text-center" stagger={3}/>
             </div>
             {/* Card 2 */}
             <div className="bg-[#0B0C0E] p-4 sm:p-6 w-full max-w-xs h-auto rounded-2xl shadow-md flex flex-col items-center ">
               <div className="w-full aspect-[6/5] rounded-xl overflow-hidden mb-6">
                 <img src="images/gif2.gif" alt="" className="w-full h-full object-cover" />
               </div>
-              <LoopText text="Analytical" className="text-2xl sm:text-3xl tracking-widest font-semibold mt-2 text-center"/>
-              <LoopText text="Thinker" className="text-xl sm:text-2xl tracking-widest font-semibold text-center"/>
+              <LoopText text="Analytical" className="text-3xl tracking-widest font-semibold mt-2 text-center"/>
+              <LoopText text="Thinker" className="text-2xl tracking-widest font-semibold text-center" stagger={3}/>
             </div>
             {/* Card 3 */}
             <div className="bg-[#0B0C0E] p-4 sm:p-6 w-full max-w-xs h-auto rounded-2xl shadow-md flex flex-col items-center ">
               <div className="w-full aspect-[6/5] rounded-xl overflow-hidden mb-6">
                 <img src="images/gif3.gif" alt="" className="w-full h-full object-cover" />
               </div>
-              <LoopText text="Fullstack" className="text-2xl sm:text-3xl tracking-widest font-semibold mt-2 text-center"/>
-              <LoopText text="Developer" className="text-xl sm:text-2xl tracking-widest font-semibold text-center"/>
+              <LoopText text="Fullstack" className="text-3xl tracking-widest font-semibold mt-2 text-center"/>
+              <LoopText text="Developer" className="text-2xl tracking-widest font-semibold text-center" stagger={3}/>
             </div>
           </div>
+        </div>
+
+        <div className="container w-full md:max-w-5xl mx-auto my-8 flex flex-col items-center">
+          <ShinyText
+            text="What shaped me"
+            disabled={false}
+            speed={5}
+            className="font-general text-xs md:text-sm uppercase md:text-[12px] text-center mb-8"
+          />
+          <Experience />
         </div>
 
       </section>

@@ -15,6 +15,7 @@ const Experience = () => {
     
     {
         year : "2022",
+        until: "2023",
         title: "STACKNET",
         description: "Joined as a full-stack developer for a startup.",
         hidden: "Just for fun and experience.",
@@ -22,18 +23,21 @@ const Experience = () => {
     },
     {
       year : "2022",
+      until: "ongoing",
       title: "UNIVERSITY OF KELANIYA",
       description: "Bachelor of Science in Computer Science (Hons.) Degree.",
       hidden: "Still an undergraduate student.",
     },
     {
       year : "2017",
+      until: "2021",
       title: "RITS",
       description: "Member of the Richmond College IT Society",
       hidden: "Where it all started with CS.",
     },
     {
       year : "2008",
+      until: "2021",
       title: "RICHMOND COLLEGE GALLE",
       description: "Completed GCE. A/Ls in Maths Stream.",
       hidden: "The beginning of a journey.",
@@ -69,12 +73,15 @@ const Experience = () => {
 
       <div className='exp flex flex-col justify-center w-full h-full text-lavender-100 '>
           {data.map((item, index) => (
-            <div className='flex items-center justify-between h-36 px-8 md:px-16 border-b-[1px] border-b-lavender-100/20 last:border-b-0' key={index}
+            <div className='flex items-center justify-between h-36 px-8 md:px-16 border-b-[1px] border-b-lavender-100/10 last:border-b-0' key={index}
             onMouseOver={() => setselected(index)}
               onMouseLeave={() => setselected(null)}
             >
-              <div className='exp-year text-4xl md:text-5xl pr-4 font-outfit font-extrabold'>{item.year}</div>
-              <div className='text-right flex flex-col items-end'>
+              <div className='flex flex-col items-start justify-center'>
+                <div className='exp-year text-4xl md:text-5xl pr-4 font-outfit font-extrabold'>{item.year}</div>
+                <div className='exp-until text-xs md:text-base font-outfit font-light'>{item.until}</div>
+              </div>
+              <div className='text-right flex flex-col items-end justify-center'>
                 <div className='text-2xl md:text-3xl font-outfit font-black '
                   
                 >{item.title}
@@ -92,7 +99,10 @@ const Experience = () => {
             onMouseOver={() => setselected(index)}
                 onMouseLeave={() => setselected(null)}
             >
-              <div className='exp-year text-4xl md:text-5xl pr-4 font-outfit font-extrabold'>{item.year}</div>
+              <div className='flex flex-col items-start justify-center'>
+                <div className='exp-year text-4xl md:text-5xl pr-4 font-outfit font-extrabold'>{item.year}</div>
+                <div className='exp-until text-xs md:text-base font-outfit font-light'>{item.until}</div>
+              </div>
               <div className='text-right flex flex-col items-end'>
               <div className='text-2xl md:text-3xl font-outfit font-black'
                 
