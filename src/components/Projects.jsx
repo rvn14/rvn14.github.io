@@ -190,12 +190,12 @@ const Projects = () => {
               src="images/newsscraper.jpg"
               title={
                 <>
-                  N<b>E</b>WS Scraper
+                  C<b>E</b>YLON BRIEF
                 </>
               }
               description="A web scraper that collects news articles from various sources and gives more accurate news in a nice web app."
               repoLink="https://github.com/rvn14/newsapp"
-              siteLink="https://newsapp-snowy-ten.vercel.app"
+              siteLink="https://ceylonbrief.com/"
             />
           </BentoTilt>
 
@@ -225,7 +225,7 @@ const Projects = () => {
             />
           </BentoTilt>
 
-          <BentoTilt className="bento-tilt_1 row-span-1  md:col-span-1 md:ms-0 h-96">
+          <BentoTilt className="bento-tilt_1 row-span-1  md:col-span-1 md:ms-0 h-96 select-none">
             <div className="flex size-full flex-col justify-between bg-lavender-500 p-5">
               <h1 className="bento-title text-7xl special-font font-light max-w-64 text-black">
                 M<b>o</b>re co<b>m</b>ing s<b>o</b>on.

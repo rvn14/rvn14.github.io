@@ -7,13 +7,15 @@ import Home from './components/Home'
 import NavBar from './components/Navbar'
 import About from './components/About'
 import { Analytics } from '@vercel/analytics/react';
+import PreLoader from './components/PreLoader'
 
 
 
 function App() {
   return (
     <ReactLenis root>
-      <NavBar/>
+      <PreLoader />
+      <NavBar />
       <main className='main relative min-h-screen w-screen overflow-x-hidden'>
         <Home />
         <About />
