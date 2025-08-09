@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import NavBar from './components/Navbar'
 import About from './components/About'
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <Contact />
         <Footer />
       </main>
+      <Analytics />
     </ReactLenis>
     )
 }
