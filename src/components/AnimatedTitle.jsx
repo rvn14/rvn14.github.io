@@ -32,11 +32,12 @@ const AnimatedTitle = ({ title, containerClass }) => {
         },
         0
       );
+      // Refresh ScrollTrigger after animation setup
+      ScrollTrigger.refresh();
     }, containerRef);
 
     return () => ctx.revert();
   }, []);
-
   return (
     <div ref={containerRef} className={clsx("animated-title", containerClass)}>
       {title.split("<br />").map((line, index) => (
