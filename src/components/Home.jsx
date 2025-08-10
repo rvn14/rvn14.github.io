@@ -40,7 +40,7 @@ const Home = () => {
   return (
     <main className="w-full min-h-dvh bg-black">
       {/* HERO SECTION */}
-      <section className="relative h-[65vh] md:h-dvh flex flex-col items-center justify-center overflow-hidden">
+      <section className="relative h-dvh flex flex-col items-center justify-center overflow-hidden">
         {/* Aurora Video BG */}
         {/* <video
           src="/video/Aurora.mp4"
@@ -54,7 +54,7 @@ const Home = () => {
           autoPlay
           loop
           muted
-          className="absolute inset-0 object-cover object-bottom w-full h-[65vh] md:h-dvh scale-103 z-0 mix-blend-screen"
+          className="absolute inset-0 object-cover object-bottom w-full  h-dvh scale-103 z-0 mix-blend-screen"
         />
 
         {/* Waves Overlay */}
