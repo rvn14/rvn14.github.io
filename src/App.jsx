@@ -6,7 +6,6 @@ import Footer from './components/Footer'
 import Home from './components/Home'
 import NavBar from './components/Navbar'
 import About from './components/About'
-import { Analytics } from '@vercel/analytics/react';
 import PreLoader from './components/PreLoader'
 
 
@@ -23,7 +22,7 @@ function App() {
         <Contact />
         <Footer />
       </main>
-      <Analytics />
+      
     </ReactLenis>
     )
 }
