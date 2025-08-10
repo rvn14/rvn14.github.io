@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import clsx from "clsx";
 import PropTypes from "prop-types";
 
@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const AnimatedTitle = ({ title, containerClass }) => {
   const containerRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const ctx = gsap.context(() => {
       const titleAnimation = gsap.timeline({
         scrollTrigger: {
@@ -34,7 +34,7 @@ const AnimatedTitle = ({ title, containerClass }) => {
       );
     }, containerRef);
 
-    return () => ctx.revert(); 
+    return () => ctx.revert();
   }, []);
 
   return (
