@@ -17,6 +17,7 @@ const AnimatedTitle = ({ title, containerClass }) => {
           start: "100 bottom",
           end: "center bottom",
           toggleActions: "play none none reverse",
+          markers: true,
         },
       });
 
