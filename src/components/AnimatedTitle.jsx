@@ -18,7 +18,7 @@ useLayoutEffect(() => {
         trigger: containerRef.current,
         start: "10% bottom",
         toggleActions: "play none none reverse",
-        markers: true,
+        
       },
     });
 
